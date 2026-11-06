@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-red-900 text-slate-800 antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-red-800/70 text-white;
+  }
+
+  :focus-visible {
+    @apply outline-none;
+  }
+}
+
+@layer components {
+  .scrollbar-slim::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+  }
+  .scrollbar-slim::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-slate-300;
+  }
+  .scrollbar-slim::-webkit-scrollbar-track {
+    @apply rounded-full bg-transparent;
+  }
+}

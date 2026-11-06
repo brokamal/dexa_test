@@ -1,0 +1,9 @@
+{
+  "name": "@app/attendance-service",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "ts-node src/main.ts",
+    "start": "node dist/main.js"
+  }
+}
